@@ -1,0 +1,20 @@
+pluginId: app.quick-actions
+sourceType: adapted
+decision: accept_partial
+originStore: obsidian-community
+upstream:
+  pluginId: quickadd
+  name: QuickAdd
+  author: Christian B. B. Houmann
+  version: 1.11.5
+  sourceUrl: https://github.com/chhoumann/quickadd
+adapter:
+  version: 0.1.0-adapted.1
+  maintainer: GeminiNotes Labs
+compatibilityLevel: partial
+reviewStatus: experimental
+riskLevel: medium
+reasoning:
+  - The upstream plugin provides high-value capture shortcuts and lightweight automation.
+  - GeminiNotes can currently host only declarative editor commands, not full desktop workflows.
+  - The first adaptation keeps current-note command scenarios and drops vault-wide automation.

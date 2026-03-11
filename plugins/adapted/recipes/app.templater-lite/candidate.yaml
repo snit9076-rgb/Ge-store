@@ -1,0 +1,29 @@
+pluginId: app.templater-lite
+sourceType: adapted
+decision: accept_partial
+originStore: obsidian-community
+upstream:
+  pluginId: templater-obsidian
+  name: Templater
+  author: SilentVoid13
+  sourceUrl: https://github.com/SilentVoid13/Templater
+category: templates-and-capture
+reviewStatus: draft
+riskLevel: medium
+whyThisPlugin:
+  - High user value for meeting templates, journal templates, and reusable note skeletons.
+  - A subset can be mapped to GeminiNotes command/register flows without full script execution.
+hostFit:
+  currentFit: partial
+  missingHostApis:
+    - arbitrary JavaScript execution sandbox
+    - file and folder template resolution
+    - interactive prompt variables
+preservedFeatures:
+  - insert predefined templates into the current note
+  - wrap selection using reusable template snippets
+removedFeatures:
+  - arbitrary script execution
+  - folder-aware template resolution
+  - prompt-driven workflows with dynamic variables
+nextStep: convert the accepted subset into declarative commands and note actions

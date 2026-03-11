@@ -1,0 +1,36 @@
+﻿.wikilink {
+    color: #1a73e8;
+    text-decoration: none;
+    background: #e8f0fe;
+    border: 1px solid #d2e3fc;
+    border-radius: 10px;
+    padding: 0 6px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.wikitag {
+    color: #5f6368;
+    background: #f1f3f4;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0 6px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wikimention {
+    color: #0b8043;
+    background: #e6f4ea;
+    border: 1px solid #cee6d5;
+    border-radius: 8px;
+    padding: 0 6px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 2px;
+    text-decoration: none;
+    cursor: pointer;
+}

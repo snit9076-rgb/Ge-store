@@ -1,0 +1,58 @@
+﻿{
+    "pluginType":  "app_plugin",
+    "id":  "app.linter-actions",
+    "name":  "Linter Actions",
+    "version":  "0.1.0",
+    "author":  "GeminiNotes",
+    "description":  "Run safe markdown cleanup commands on the current note",
+    "iconName":  "Rule",
+    "minAppVersion":  20,
+    "compatibilityLevel":  "adapted",
+    "sourceType":  "adapted",
+    "permissions":  [
+                        "note.read",
+                        "note.write_current"
+                    ],
+    "capabilities":  [
+                         "command.register",
+                         "note.read",
+                         "note.write_current"
+                     ],
+    "commands":  [
+                     {
+                         "id":  "normalize_heading_spacing",
+                         "label":  "Normalize Heading Spacing",
+                         "payload":  "",
+                         "description":  "Insert a space after heading markers like #Title",
+                         "action":  "normalize_heading_spacing",
+                         "requiresSelection":  false
+                     },
+                     {
+                         "id":  "normalize_list_spacing",
+                         "label":  "Normalize List Spacing",
+                         "payload":  "",
+                         "description":  "Insert a space after unordered and ordered list markers",
+                         "action":  "normalize_list_spacing",
+                         "requiresSelection":  false
+                     },
+                     {
+                         "id":  "trim_trailing_spaces",
+                         "label":  "Trim Trailing Spaces",
+                         "payload":  "",
+                         "description":  "Remove trailing spaces and tabs from each line",
+                         "action":  "trim_trailing_spaces",
+                         "requiresSelection":  false
+                     },
+                     {
+                         "id":  "collapse_blank_lines",
+                         "label":  "Collapse Blank Lines",
+                         "payload":  "",
+                         "description":  "Reduce repeated blank lines to a single separator",
+                         "action":  "collapse_blank_lines",
+                         "requiresSelection":  false
+                     }
+                 ],
+    "entry":  {
+                  "main":  "main.js"
+              }
+}

@@ -1,0 +1,16 @@
+﻿{
+    "pluginType":  "syntax_card",
+    "id":  "ext.text-highlight",
+    "name":  "Text Highlight",
+    "version":  "1.0.0",
+    "author":  "GeminiNotes",
+    "description":  "Highlight ==marked== text segments inside notes",
+    "iconName":  "AutoAwesome",
+    "claimedPatterns":  [
+                            "text_highlight"
+                        ],
+    "incompatibleWith":  [
+
+                         ],
+    "minAppVersion":  12
+}

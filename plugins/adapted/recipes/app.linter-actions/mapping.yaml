@@ -1,0 +1,23 @@
+pluginId: app.linter-actions
+keptCapabilities:
+  - upstreamFeature: fix heading spacing in markdown headings
+    geminiNotesMapping: command.register -> normalize_heading_spacing
+  - upstreamFeature: normalize unordered and ordered list markers
+    geminiNotesMapping: command.register -> normalize_list_spacing
+  - upstreamFeature: remove trailing spaces from the current note
+    geminiNotesMapping: command.register -> trim_trailing_spaces
+  - upstreamFeature: collapse repeated blank lines in the current note
+    geminiNotesMapping: command.register -> collapse_blank_lines
+removedCapabilities:
+  - upstreamFeature: run lint rules across the whole vault
+    reason: GeminiNotes currently exposes current-note commands only
+  - upstreamFeature: file rename and metadata driven workflows
+    reason: requires file-system and multi-document APIs not exposed by the host
+permissionMapping:
+  - upstreamIntent: read active note content
+    geminiNotesPermission: note.read
+  - upstreamIntent: rewrite active note content after cleanup
+    geminiNotesPermission: note.write_current
+releaseDecision:
+  publishAs: gnplugin
+  installHint: Runs deterministic markdown cleanup commands on the active note through the GeminiNotes App Plugin host.

@@ -1,0 +1,52 @@
+﻿{
+    "pluginType":  "app_plugin",
+    "id":  "app.quick-actions",
+    "name":  "Quick Actions",
+    "version":  "0.1.0",
+    "author":  "GeminiNotes",
+    "description":  "Add quick note cleanup commands, selection tools, and editor shortcuts",
+    "iconName":  "AutoAwesome",
+    "minAppVersion":  20,
+    "compatibilityLevel":  "partial",
+    "sourceType":  "adapted",
+    "permissions":  [
+                        "note.read",
+                        "note.write_current",
+                        "editor.selection.replace"
+                    ],
+    "capabilities":  [
+                         "command.register",
+                         "note.read",
+                         "note.write_current",
+                         "editor.selection.replace"
+                     ],
+    "commands":  [
+                     {
+                         "id":  "insert_meeting_template",
+                         "label":  "Insert Meeting Template",
+                         "payload":  "## Meeting Notes\n- Agenda\n- Decisions\n- Follow-ups\n",
+                         "description":  "Insert a lightweight meeting template at the cursor",
+                         "action":  "insert_text",
+                         "requiresSelection":  false
+                     },
+                     {
+                         "id":  "wrap_selection_as_action_items",
+                         "label":  "Wrap Selection as Action Items",
+                         "payload":  "### Action Items\n- {{selection}}",
+                         "description":  "Wrap the current selection into an action items block",
+                         "action":  "wrap_selection",
+                         "requiresSelection":  true
+                     },
+                     {
+                         "id":  "append_follow_up_section",
+                         "label":  "Append Follow-up Section",
+                         "payload":  "## Follow-up\n- [ ] Owner\n- [ ] Deadline\n- [ ] Next step",
+                         "description":  "Append a follow-up section to the end of the note",
+                         "action":  "append_text",
+                         "requiresSelection":  false
+                     }
+                 ],
+    "entry":  {
+                  "main":  "main.js"
+              }
+}

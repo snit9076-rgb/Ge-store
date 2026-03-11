@@ -1,0 +1,294 @@
+﻿[
+    {
+        "pluginType":  "syntax_card",
+        "id":  "ext.wiki-links",
+        "name":  "Wiki Links",
+        "version":  "1.0.0",
+        "author":  "GeminiNotes",
+        "description":  "Render [[WikiLinks]], #tags, and @mentions as styled links",
+        "downloadUrl":  "https://raw.githubusercontent.com/snit9076-rgb/Ge-store/main/plugins/releases/wiki-links.cardslot",
+        "homepageUrl":  "https://github.com/snit9076-rgb/Ge-store/blob/main/plugins/sources/wiki-links/README.md",
+        "sourceRepoUrl":  "https://github.com/snit9076-rgb/Ge-store/tree/main/plugins/sources/wiki-links",
+        "iconName":  "Link",
+        "category":  "Format",
+        "downloads":  0,
+        "rating":  4.8,
+        "previewUrl":  null,
+        "featured":  true,
+        "supportedPatterns":  [
+                                  "wikilink",
+                                  "hashtag",
+                                  "mention"
+                              ],
+        "useCases":  [
+                         "Knowledge Base",
+                         "Research Notes",
+                         "Cross-link Navigation"
+                     ],
+        "qualitySignals":  [
+                               "Verified",
+                               "Beginner-friendly",
+                               "High compatibility"
+                           ],
+        "capabilities":  null,
+        "permissions":  null,
+        "minAppVersion":  12,
+        "installHint":  "Works best in note collections that rely on tags, mentions, and wiki-style navigation.",
+        "sourceType":  "official",
+        "compatibilityLevel":  "native"
+    },
+    {
+        "pluginType":  "syntax_card",
+        "id":  "ext.emoji-shortcode",
+        "name":  "Emoji Shortcodes",
+        "version":  "1.1.0",
+        "author":  "GeminiNotes",
+        "description":  "Convert :shortcodes: into emoji characters with an expanded dictionary",
+        "downloadUrl":  "https://raw.githubusercontent.com/snit9076-rgb/Ge-store/main/plugins/releases/emoji-shortcode.cardslot",
+        "homepageUrl":  "https://github.com/snit9076-rgb/Ge-store/blob/main/plugins/sources/emoji-shortcode/README.md",
+        "sourceRepoUrl":  "https://github.com/snit9076-rgb/Ge-store/tree/main/plugins/sources/emoji-shortcode",
+        "iconName":  "AutoAwesome",
+        "category":  "Format",
+        "downloads":  0,
+        "rating":  4.7,
+        "previewUrl":  null,
+        "featured":  true,
+        "supportedPatterns":  [
+                                  "emoji_shortcode"
+                              ],
+        "useCases":  [
+                         "Study Notes",
+                         "Personal Journals",
+                         "Lightweight Status Markers"
+                     ],
+        "qualitySignals":  [
+                               "Verified",
+                               "Quick win",
+                               "Beginner-friendly"
+                           ],
+        "capabilities":  null,
+        "permissions":  null,
+        "minAppVersion":  12,
+        "installHint":  "A good starter card for general-purpose decks that need more expressive notes without extra syntax overhead.",
+        "sourceType":  "official",
+        "compatibilityLevel":  "native"
+    },
+    {
+        "pluginType":  "syntax_card",
+        "id":  "ext.text-highlight",
+        "name":  "Text Highlight",
+        "version":  "1.0.0",
+        "author":  "GeminiNotes",
+        "description":  "Highlight ==marked== text segments inside notes",
+        "downloadUrl":  "https://raw.githubusercontent.com/snit9076-rgb/Ge-store/main/plugins/releases/text-highlight.cardslot",
+        "homepageUrl":  "https://github.com/snit9076-rgb/Ge-store/blob/main/plugins/sources/text-highlight/README.md",
+        "sourceRepoUrl":  "https://github.com/snit9076-rgb/Ge-store/tree/main/plugins/sources/text-highlight",
+        "iconName":  "AutoAwesome",
+        "category":  "Format",
+        "downloads":  0,
+        "rating":  4.6,
+        "previewUrl":  null,
+        "featured":  false,
+        "supportedPatterns":  [
+                                  "text_highlight"
+                              ],
+        "useCases":  [
+                         "Revision Notes",
+                         "Lecture Review",
+                         "Key Point Extraction"
+                     ],
+        "qualitySignals":  [
+                               "Verified",
+                               "Focused writing",
+                               "Low friction"
+                           ],
+        "capabilities":  null,
+        "permissions":  null,
+        "minAppVersion":  12,
+        "installHint":  "Pair this with a clean reading deck when users need clear emphasis without adding heavy layout syntax.",
+        "sourceType":  "community",
+        "compatibilityLevel":  "native"
+    },
+    {
+        "pluginType":  "syntax_card",
+        "id":  "ext.code-tools",
+        "name":  "Code Tools",
+        "version":  "1.0.0",
+        "author":  "GeminiNotes",
+        "description":  "Add copy buttons and line numbers to fenced code blocks",
+        "downloadUrl":  "https://raw.githubusercontent.com/snit9076-rgb/Ge-store/main/plugins/releases/code-tools.cardslot",
+        "homepageUrl":  "https://github.com/snit9076-rgb/Ge-store/blob/main/plugins/sources/code-tools/README.md",
+        "sourceRepoUrl":  "https://github.com/snit9076-rgb/Ge-store/tree/main/plugins/sources/code-tools",
+        "iconName":  "Terminal",
+        "category":  "Tool",
+        "downloads":  0,
+        "rating":  4.9,
+        "previewUrl":  null,
+        "featured":  true,
+        "supportedPatterns":  [
+                                  "code_copy",
+                                  "code_line_numbers"
+                              ],
+        "useCases":  [
+                         "Technical Docs",
+                         "Programming Notes",
+                         "Code Review Prep"
+                     ],
+        "qualitySignals":  [
+                               "Verified",
+                               "Power-user ready",
+                               "Technical writing"
+                           ],
+        "capabilities":  null,
+        "permissions":  null,
+        "minAppVersion":  12,
+        "installHint":  "Best added to developer-focused decks alongside syntax highlighting and markdown basics.",
+        "sourceType":  "official",
+        "compatibilityLevel":  "native"
+    },
+    {
+        "pluginType":  "app_plugin",
+        "id":  "app.linter-actions",
+        "name":  "Linter Actions",
+        "version":  "0.1.0",
+        "author":  "GeminiNotes",
+        "description":  "Run safe markdown cleanup commands on the current note",
+        "downloadUrl":  "https://raw.githubusercontent.com/snit9076-rgb/Ge-store/main/plugins/releases/linter-actions.gnplugin",
+        "homepageUrl":  "https://github.com/snit9076-rgb/Ge-store/blob/main/plugins/sources/linter-actions/README.md",
+        "sourceRepoUrl":  "https://github.com/snit9076-rgb/Ge-store/tree/main/plugins/sources/linter-actions",
+        "iconName":  "Rule",
+        "category":  "Productivity",
+        "downloads":  0,
+        "rating":  4.6,
+        "previewUrl":  null,
+        "featured":  true,
+        "supportedPatterns":  null,
+        "useCases":  [
+                         "Markdown Cleanup",
+                         "Imported Notes",
+                         "Technical Writing"
+                     ],
+        "qualitySignals":  [
+                               "Verified candidate",
+                               "Deterministic transforms",
+                               "Current-note safe"
+                           ],
+        "capabilities":  [
+                             "command.register",
+                             "note.read",
+                             "note.write_current"
+                         ],
+        "permissions":  [
+                            "note.read",
+                            "note.write_current"
+                        ],
+        "minAppVersion":  20,
+        "installHint":  "Runs deterministic markdown cleanup commands on the active note through the GeminiNotes App Plugin host.",
+        "sourceType":  "adapted",
+        "compatibilityLevel":  "adapted",
+        "originStore":  "obsidian-community",
+        "upstream":  {
+                         "sourceUrl":  "https://github.com/platers/obsidian-linter",
+                         "pluginId":  "obsidian-linter",
+                         "author":  "Victor Tao",
+                         "name":  "Linter",
+                         "version":  "1.27.1"
+                     },
+        "adapterVersion":  "0.1.0-adapted.1",
+        "adapterMaintainer":  "GeminiNotes Labs",
+        "preservedFeatures":  [
+                                  "Normalize heading spacing in the current note",
+                                  "Normalize list marker spacing",
+                                  "Trim trailing spaces",
+                                  "Collapse repeated blank lines"
+                              ],
+        "removedFeatures":  [
+                                "Vault-wide batch formatting",
+                                "File rename and metadata workflows"
+                            ],
+        "knownLimitations":  [
+                                 "Only the active note is transformed",
+                                 "Desktop-only automation and vault-wide cleanup are omitted"
+                             ],
+        "unsupportedFeatures":  [
+                                    "Batch linting across multiple files",
+                                    "File-system driven metadata operations"
+                                ],
+        "reviewStatus":  "experimental",
+        "riskLevel":  "low",
+        "adaptationReportUrl":  "https://github.com/gemininotes/plugins/blob/main/plugins/adapted/reports/app.linter-actions.md"
+    },
+    {
+        "pluginType":  "app_plugin",
+        "id":  "app.quick-actions",
+        "name":  "Quick Actions",
+        "version":  "0.1.0",
+        "author":  "GeminiNotes",
+        "description":  "Add quick note cleanup commands, selection tools, and editor shortcuts",
+        "downloadUrl":  "https://raw.githubusercontent.com/snit9076-rgb/Ge-store/main/plugins/releases/quick-actions.gnplugin",
+        "homepageUrl":  "https://github.com/snit9076-rgb/Ge-store/blob/main/plugins/sources/quick-actions/README.md",
+        "sourceRepoUrl":  "https://github.com/snit9076-rgb/Ge-store/tree/main/plugins/sources/quick-actions",
+        "iconName":  "AutoAwesome",
+        "category":  "Productivity",
+        "downloads":  0,
+        "rating":  4.5,
+        "previewUrl":  null,
+        "featured":  false,
+        "supportedPatterns":  null,
+        "useCases":  [
+                         "Meeting Notes",
+                         "Inbox Cleanup",
+                         "Daily Capture"
+                     ],
+        "qualitySignals":  [
+                               "Experimental",
+                               "Phase 2 sample",
+                               "Adapted-ready"
+                           ],
+        "capabilities":  [
+                             "command.register",
+                             "note.read",
+                             "note.write_current",
+                             "editor.selection.replace"
+                         ],
+        "permissions":  [
+                            "note.read",
+                            "note.write_current",
+                            "editor.selection.replace"
+                        ],
+        "minAppVersion":  20,
+        "installHint":  "Provides safe declarative editor commands that are registered by the App Plugin host.",
+        "sourceType":  "adapted",
+        "compatibilityLevel":  "partial",
+        "originStore":  "obsidian-community",
+        "upstream":  {
+                         "sourceUrl":  "https://github.com/chhoumann/quickadd",
+                         "pluginId":  "quickadd",
+                         "author":  "Christian B. B. Houmann",
+                         "name":  "QuickAdd",
+                         "version":  "1.11.5"
+                     },
+        "adapterVersion":  "0.1.0-adapted.1",
+        "adapterMaintainer":  "GeminiNotes Labs",
+        "preservedFeatures":  [
+                                  "Current-note template insertion",
+                                  "Selection-to-action-items transformation",
+                                  "Append follow-up checklist to the active note"
+                              ],
+        "removedFeatures":  [
+                                "Vault-wide capture macros",
+                                "Interactive modal workflows"
+                            ],
+        "knownLimitations":  [
+                                 "Advanced capture macros are not included",
+                                 "Vault-wide automation was narrowed to current-note actions"
+                             ],
+        "unsupportedFeatures":  [
+                                    "Desktop-only file system actions",
+                                    "Custom modal workflows from the original plugin"
+                                ],
+        "reviewStatus":  "experimental",
+        "riskLevel":  "medium",
+        "adaptationReportUrl":  "https://github.com/gemininotes/plugins/blob/main/plugins/adapted/reports/app.quick-actions.md"
+    }
+]

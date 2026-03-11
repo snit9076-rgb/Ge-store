@@ -1,0 +1,28 @@
+pluginId: app.kanban-lite
+sourceType: adapted
+decision: reject
+originStore: obsidian-community
+upstream:
+  pluginId: obsidian-kanban
+  name: Kanban
+  author: mgmeyers
+  sourceUrl: https://github.com/mgmeyers/obsidian-kanban
+category: complex-views
+reviewStatus: draft
+riskLevel: high
+whyThisPlugin:
+  - High user value, but the upstream experience depends on a custom view system and board interactions.
+  - Current GeminiNotes host does not expose the workspace or view APIs required for a meaningful adaptation.
+hostFit:
+  currentFit: low
+  missingHostApis:
+    - custom board view container
+    - drag-and-drop runtime APIs
+    - structured file model for kanban state
+preservedFeatures:
+  - none viable in the current host without reducing the plugin to a different product
+removedFeatures:
+  - board rendering
+  - drag and drop card movement
+  - rich kanban-specific state management
+rejectionReason: revisit only after GeminiNotes ships custom view containers and richer document models

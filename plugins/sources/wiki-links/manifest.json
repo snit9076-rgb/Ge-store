@@ -1,0 +1,18 @@
+﻿{
+    "pluginType":  "syntax_card",
+    "id":  "ext.wiki-links",
+    "name":  "Wiki Links",
+    "version":  "1.0.0",
+    "author":  "GeminiNotes",
+    "description":  "Render [[WikiLinks]], #tags, and @mentions as styled links",
+    "iconName":  "Link",
+    "claimedPatterns":  [
+                            "wikilink",
+                            "hashtag",
+                            "mention"
+                        ],
+    "incompatibleWith":  [
+
+                         ],
+    "minAppVersion":  12
+}

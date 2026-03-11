@@ -1,0 +1,29 @@
+pluginId: app.linter-actions
+sourceType: adapted
+decision: accept
+status: implemented-sample
+originStore: obsidian-community
+upstream:
+  pluginId: obsidian-linter
+  name: Linter
+  author: Victor Tao
+  version: 1.27.1
+  sourceUrl: https://github.com/platers/obsidian-linter
+category: text-cleanup
+reviewStatus: experimental
+riskLevel: low
+whyThisPlugin:
+  - Strong match for current GeminiNotes command host because many actions are deterministic text transforms.
+  - Easy to explain to users and easy to validate with targeted tests.
+hostFit:
+  currentFit: high
+  missingHostApis:
+    - bulk vault processing
+preservedFeatures:
+  - normalize heading spacing in the current note
+  - fix list spacing and trailing spaces
+  - standardize markdown punctuation and blank lines
+removedFeatures:
+  - vault-wide batch formatting
+  - file rename or file metadata workflows
+nextStep: build as a set of note cleanup commands and current-note actions

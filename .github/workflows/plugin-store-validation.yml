@@ -1,0 +1,45 @@
+name: Plugin Store Validation
+
+on:
+  pull_request:
+    paths:
+      - 'plugins/**'
+      - '.github/workflows/plugin-store-validation.yml'
+      - 'PLUGIN_SPEC.md'
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'plugins/**'
+      - '.github/workflows/plugin-store-validation.yml'
+      - 'PLUGIN_SPEC.md'
+  workflow_dispatch:
+
+jobs:
+  validate-plugin-store:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up PowerShell
+        shell: pwsh
+        run: |
+          $PSVersionTable.PSVersion
+
+      - name: Build sample store artifacts
+        shell: pwsh
+        run: |
+          ./plugins/build-sample-store.ps1
+
+      - name: Validate store index and packages
+        shell: pwsh
+        run: |
+          ./plugins/validate-store.ps1
+
+      - name: Ensure generated plugin artifacts are committed
+        shell: bash
+        run: |
+          git diff --exit-code -- plugins/plugins.json plugins/releases plugins/sources plugins/adapted

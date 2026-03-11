@@ -1,0 +1,16 @@
+﻿{
+    "pluginType":  "syntax_card",
+    "id":  "ext.emoji-shortcode",
+    "name":  "Emoji Shortcodes",
+    "version":  "1.1.0",
+    "author":  "GeminiNotes",
+    "description":  "Convert :shortcodes: into emoji characters with an expanded dictionary",
+    "iconName":  "AutoAwesome",
+    "claimedPatterns":  [
+                            "emoji_shortcode"
+                        ],
+    "incompatibleWith":  [
+
+                         ],
+    "minAppVersion":  12
+}

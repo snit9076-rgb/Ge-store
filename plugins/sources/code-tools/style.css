@@ -1,0 +1,44 @@
+﻿.code-tools {
+    position: relative;
+    margin: 10px 0 14px;
+}
+
+.code-tools .code-copy {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    border: 1px solid var(--card-border);
+    background: #ffffffcc;
+    color: var(--text);
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.code-tools .code-copy.copied {
+    background: #e8f5e9;
+    border-color: #a5d6a7;
+    color: #1b5e20;
+}
+
+.code-tools .code-block {
+    margin: 0;
+    padding-top: 28px;
+}
+
+.code-tools .code-line {
+    display: block;
+    padding-left: 2.8em;
+    position: relative;
+}
+
+.code-tools .code-line::before {
+    content: attr(data-line);
+    position: absolute;
+    left: 0;
+    width: 2.2em;
+    text-align: right;
+    color: var(--muted);
+    opacity: 0.6;
+}

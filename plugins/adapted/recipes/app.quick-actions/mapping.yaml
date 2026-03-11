@@ -1,0 +1,23 @@
+pluginId: app.quick-actions
+keptCapabilities:
+  - upstreamFeature: insert template into current note
+    geminiNotesMapping: command.register -> insert_text
+  - upstreamFeature: wrap current selection as action items
+    geminiNotesMapping: command.register -> wrap_selection
+  - upstreamFeature: append follow-up checklist
+    geminiNotesMapping: command.register -> append_text
+removedCapabilities:
+  - upstreamFeature: vault-wide file creation and macro chains
+    reason: requires desktop file-system APIs not exposed by GeminiNotes
+  - upstreamFeature: custom modal workflows
+    reason: requires interactive runtime and UI APIs not yet implemented
+permissionMapping:
+  - upstreamIntent: read current note context
+    geminiNotesPermission: note.read
+  - upstreamIntent: modify current note content
+    geminiNotesPermission: note.write_current
+  - upstreamIntent: transform current selection
+    geminiNotesPermission: editor.selection.replace
+releaseDecision:
+  publishAs: gnplugin
+  installHint: Provides safe declarative editor commands through the GeminiNotes App Plugin host.

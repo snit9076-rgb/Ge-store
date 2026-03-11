@@ -1,0 +1,15 @@
+{
+  "pluginType": "app_plugin",
+  "id": "app.quick-actions",
+  "name": "Quick Actions",
+  "version": "0.1.0",
+  "author": "GeminiNotes",
+  "description": "Add quick note cleanup commands, selection tools, and editor shortcuts",
+  "iconName": "AutoAwesome",
+  "minAppVersion": 20,
+  "compatibilityLevel": "partial",
+  "sourceType": "adapted",
+  "permissions": ["note.read", "note.write_current", "editor.selection.replace"],
+  "capabilities": ["command.register", "note.read", "note.write_current", "editor.selection.replace"],
+  "entry": { "main": "main.js" }
+}

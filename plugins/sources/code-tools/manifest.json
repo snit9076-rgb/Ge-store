@@ -1,0 +1,17 @@
+﻿{
+    "pluginType":  "syntax_card",
+    "id":  "ext.code-tools",
+    "name":  "Code Tools",
+    "version":  "1.0.0",
+    "author":  "GeminiNotes",
+    "description":  "Add copy buttons and line numbers to fenced code blocks",
+    "iconName":  "Terminal",
+    "claimedPatterns":  [
+                            "code_copy",
+                            "code_line_numbers"
+                        ],
+    "incompatibleWith":  [
+
+                         ],
+    "minAppVersion":  12
+}

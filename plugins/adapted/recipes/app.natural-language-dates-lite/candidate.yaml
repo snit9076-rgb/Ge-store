@@ -1,0 +1,27 @@
+pluginId: app.natural-language-dates-lite
+sourceType: adapted
+decision: accept_partial
+originStore: obsidian-community
+upstream:
+  pluginId: nldates-obsidian
+  name: Natural Language Dates
+  author: Josh Thomas
+  sourceUrl: https://github.com/argenos/nldates-obsidian
+category: editor-productivity
+reviewStatus: draft
+riskLevel: medium
+whyThisPlugin:
+  - Common user need and a good fit for current-note insertion commands.
+  - Useful even with a reduced scope that only targets the active editor.
+hostFit:
+  currentFit: partial
+  missingHostApis:
+    - locale-aware preference storage
+    - richer date picker and parsing settings UI
+preservedFeatures:
+  - insert parsed dates into the current note
+  - replace selected text with normalized date strings
+removedFeatures:
+  - broad editor hook coverage across multiple desktop contexts
+  - advanced locale and custom format settings panels
+nextStep: prototype as current-note date insertion and selection replacement commands
