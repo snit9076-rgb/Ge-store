@@ -54,6 +54,17 @@ function Copy-FileIfChanged {
     Write-Utf8FileIfChanged -Path $DestinationPath -Content $sourceContent
 }
 
+function Normalize-TextFilesInDirectory {
+    param([string]$DirectoryPath)
+
+    Get-ChildItem -Path $DirectoryPath -File |
+        Where-Object { $_.Extension -in @('.md', '.json', '.js', '.css') } |
+        ForEach-Object {
+            $content = [System.IO.File]::ReadAllText($_.FullName)
+            Write-Utf8FileIfChanged -Path $_.FullName -Content $content
+        }
+}
+
 function New-DeterministicArchive {
     param(
         [string]$SourceDir,
@@ -175,6 +186,7 @@ foreach ($plugin in $plugins) {
         Write-Utf8FileIfChanged -Path (Join-Path $pluginDir 'README.md') -Content "# $($plugin.Name)`n`nGenerated sample App Plugin package for the GeminiNotes community store."
     }
 
+    Normalize-TextFilesInDirectory -DirectoryPath $pluginDir
     New-DeterministicArchive -SourceDir $pluginDir -DestinationPath $releasePath
 
     $supportedPatterns = $null
