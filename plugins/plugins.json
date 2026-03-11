@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "pluginType":  "syntax_card",
         "id":  "ext.wiki-links",
@@ -216,7 +216,7 @@
                                 ],
         "reviewStatus":  "experimental",
         "riskLevel":  "low",
-        "adaptationReportUrl":  "https://github.com/gemininotes/plugins/blob/main/plugins/adapted/reports/app.linter-actions.md"
+        "adaptationReportUrl":  "https://github.com/snit9076-rgb/Ge-store/blob/main/plugins/adapted/reports/app.linter-actions.md"
     },
     {
         "pluginType":  "app_plugin",
@@ -289,6 +289,6 @@
                                 ],
         "reviewStatus":  "experimental",
         "riskLevel":  "medium",
-        "adaptationReportUrl":  "https://github.com/gemininotes/plugins/blob/main/plugins/adapted/reports/app.quick-actions.md"
+        "adaptationReportUrl":  "https://github.com/snit9076-rgb/Ge-store/blob/main/plugins/adapted/reports/app.quick-actions.md"
     }
 ]

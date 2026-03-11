@@ -1,1 +1,1 @@
-﻿(function(){ /* Asset-driven plugin bootstrap */ })();
+(function(){ /* Asset-driven plugin bootstrap */ })();

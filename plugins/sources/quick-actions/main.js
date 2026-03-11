@@ -1,1 +1,1 @@
-﻿(function(){ console.log('Quick Actions app plugin placeholder'); })();
+(function(){ console.log('Quick Actions app plugin placeholder'); })();

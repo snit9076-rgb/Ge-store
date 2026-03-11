@@ -1,1 +1,1 @@
-﻿(function(){ console.log('Linter Actions app plugin placeholder'); })();
+(function(){ console.log('Linter Actions app plugin placeholder'); })();
