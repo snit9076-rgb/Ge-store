@@ -50,29 +50,8 @@ function Copy-FileIfChanged {
         [string]$DestinationPath
     )
 
-    $sourceBytes = [System.IO.File]::ReadAllBytes($SourcePath)
-    $parent = Split-Path -Parent $DestinationPath
-    if ($parent -and !(Test-Path $parent)) {
-        New-Item -ItemType Directory -Force -Path $parent | Out-Null
-    }
-
-    if (Test-Path $DestinationPath) {
-        $destinationBytes = [System.IO.File]::ReadAllBytes($DestinationPath)
-        if ($destinationBytes.Length -eq $sourceBytes.Length) {
-            $same = $true
-            for ($i = 0; $i -lt $sourceBytes.Length; $i++) {
-                if ($destinationBytes[$i] -ne $sourceBytes[$i]) {
-                    $same = $false
-                    break
-                }
-            }
-            if ($same) {
-                return
-            }
-        }
-    }
-
-    [System.IO.File]::WriteAllBytes($DestinationPath, $sourceBytes)
+    $sourceContent = [System.IO.File]::ReadAllText($SourcePath)
+    Write-Utf8FileIfChanged -Path $DestinationPath -Content $sourceContent
 }
 
 function New-DeterministicArchive {
