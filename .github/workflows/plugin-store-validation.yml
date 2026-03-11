@@ -25,21 +25,21 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up PowerShell
-        shell: pwsh
+        shell: powershell
         run: |
           $PSVersionTable.PSVersion
 
       - name: Build sample store artifacts
-        shell: pwsh
+        shell: powershell
         run: |
           ./plugins/build-sample-store.ps1
 
       - name: Validate store index and packages
-        shell: pwsh
+        shell: powershell
         run: |
           ./plugins/validate-store.ps1
 
       - name: Ensure generated plugin artifacts are committed
-        shell: bash
+        shell: powershell
         run: |
           git diff --exit-code -- plugins/plugins.json plugins/releases plugins/sources plugins/adapted
